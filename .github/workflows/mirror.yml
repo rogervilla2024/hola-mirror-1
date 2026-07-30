@@ -39,6 +39,21 @@ jobs:
           # hatasi veriyor. false yaparak header eklenmez, PAT calisir.
           persist-credentials: false
 
+      - name: Strip workflow files for mirror
+        # Mirror repolarina .github/workflows/ push etmek icin PAT'in `workflow`
+        # scope'u gerekiyor (GitHub sinirlamasi). Bunun yerine push oncesi
+        # workflow dosyalarini local'de silip commit'liyoruz — mirror repo'sunda
+        # `if: github.repository == 'rogervilla2024/hola'` gate ile zaten calismazdi
+        # bu dosyalar, o yuzden mirror'da olmasina gerek yok. PAT sadece `repo` scope
+        # ile yeter, ekstra izin istemez.
+        run: |
+          git config user.email "actions@users.noreply.github.com"
+          git config user.name "hola-mirror-sync"
+          if [ -d .github/workflows ]; then
+            git rm -rf .github/workflows
+            git commit -m "Strip .github/workflows for mirror"
+          fi
+
       - name: Force-push to hola-mirror-${{ matrix.n }}
         env:
           MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
@@ -47,6 +62,5 @@ jobs:
             echo "::error::MIRROR_TOKEN secret set edilmemis. Repo Settings > Secrets and variables > Actions bolumune ekle."
             exit 1
           fi
-          git remote add mirror "https://x-access-token:${MIRROR_TOKEN}@github.com/rogervilla2024/hola-mirror-${{ matrix.n }}.git"
-          git push mirror main:main --force
+          git push --force "https://x-access-token:${MIRROR_TOKEN}@github.com/rogervilla2024/hola-mirror-${{ matrix.n }}.git" HEAD:main
           echo "Synced to hola-mirror-${{ matrix.n }}"
