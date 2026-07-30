@@ -33,6 +33,11 @@ jobs:
           # Full history mirror sync icin sart — shallow clone'da force-push
           # kirlenmis history olustabilir
           fetch-depth: 0
+          # KRITIK: actions/checkout default'ta git config'e Authorization header
+          # ekliyor (github-actions[bot] tokeniyle). Bu header sonraki `git push`'ta
+          # bizim URL'ye gomdugumuz PAT'yi ezip "denied to github-actions[bot]"
+          # hatasi veriyor. false yaparak header eklenmez, PAT calisir.
+          persist-credentials: false
 
       - name: Force-push to hola-mirror-${{ matrix.n }}
         env:
