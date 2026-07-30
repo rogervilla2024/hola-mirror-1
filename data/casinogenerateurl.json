@@ -1,0 +1,23 @@
+[
+  {
+    "image": "../logos/discount-casino.jpg",
+    "url": "https://generateurl.link/f5g6d3k/",
+    "title": "Discount Casino",
+    "bonus": { "percent": "%100", "amount": "5.000 TL", "note": "Nakit" },
+    "rating": 4.8
+  },
+  {
+    "image": "../logos/jetbahis.jpg",
+    "url": "https://generateurl.link/b6v5c4u/",
+    "title": "Jetbahis",
+    "bonus": { "percent": "%125", "amount": "20.000 TL" },
+    "rating": 4.9
+  },
+  {
+    "image": "../logos/hovarda.jpeg",
+    "url": "https://generateurl.link/h4v0r1d/",
+    "title": "Hovarda",
+    "bonus": { "percent": "%300", "amount": "1.500 TL" },
+    "rating": 4.7
+  }
+]

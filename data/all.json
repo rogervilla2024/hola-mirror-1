@@ -1,0 +1,58 @@
+[
+  {
+    "image": "../logos/celtabet.png",
+    "url": "https://shortlinks.biz/9l7jn6y",
+    "title": "Celtabet",
+    "bonus": { "percent": "%100", "amount": "7.500 TL" },
+    "rating": 4.8
+  },
+  {
+    "image": "../logos/discount-casino.jpg",
+    "url": "https://shortlinks.biz/q2c1c5k",
+    "title": "Discount Casino",
+    "bonus": { "percent": "%100", "amount": "5.000 TL", "note": "Nakit" },
+    "rating": 4.7
+  },
+  {
+    "image": "../logos/jetbahis.jpg",
+    "url": "https://shortlinks.biz/w6b2c1z",
+    "title": "Jetbahis",
+    "bonus": { "percent": "%125", "amount": "20.000 TL" },
+    "rating": 4.6
+  },
+  {
+    "image": "../logos/lord-casino.png",
+    "url": "https://shortlinks.biz/l4u8a1a/",
+    "title": "Lord Casino",
+    "bonus": { "percent": "%100", "amount": "5.000 TL" },
+    "rating": 4.5
+  },
+  {
+    "image": "../logos/mobilbahis.jpg",
+    "url": "https://shortlinks.biz/m5t6b8u",
+    "title": "Mobilbahis",
+    "bonus": { "percent": "%125", "amount": "20.000 TL" },
+    "rating": 4.5
+  },
+  {
+    "image": "../logos/parmabet.gif",
+    "url": "https://shortlinks.biz/p9a4r2m/",
+    "title": "Parmabet",
+    "bonus": { "percent": "%100", "amount": "10.000 TL" },
+    "rating": 4.3
+  },
+  {
+    "image": "../logos/trbet.jpg",
+    "url": "https://shortlinks.biz/t8u9k7m/",
+    "title": "Trbet",
+    "bonus": { "percent": "%100", "amount": "35.000 TL" },
+    "rating": 4.2
+  },
+  {
+    "image": "../logos/hovarda.jpeg",
+    "url": "https://shortlinks.biz/h4v0r1d/",
+    "title": "Hovarda",
+    "bonus": { "percent": "%300", "amount": "1.500 TL" },
+    "rating": 4.1
+  }
+]
