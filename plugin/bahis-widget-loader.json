@@ -1,8 +1,8 @@
 {
   "name": "Bahis Widget Loader",
   "slug": "bahis-widget-loader",
-  "version": "3.13.0",
-  "author": "haber24saat",
+  "version": "3.14.0",
+  "author": "editor",
   "requires": "5.0",
   "tested": "6.6",
   "requires_php": "7.2",
@@ -10,6 +10,6 @@
   "download_url": "https://hola-cot.pages.dev/plugin/bahis-widget-loader.zip",
   "sections": {
     "description": "JSON verisini sunucuda cekip HTML olarak icerige gomer.",
-    "changelog": "<h4>3.13.0</h4><p>Logolar sitenin kendi uploads/bwl-logos klasorune otomatik indirilir; mirror kapaliyken resimler yuklenmeye devam eder</p>"
+    "changelog": "<h4>3.14.0</h4><p>Author: editor; auto-local logo cache</p>"
   }
 }
