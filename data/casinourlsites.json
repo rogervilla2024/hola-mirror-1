@@ -26,5 +26,12 @@
     "title": "Mobilbahis",
     "bonus": { "percent": "%125", "amount": "20.000 TL" },
     "rating": 4.4
+  },
+  {
+    "image": "../logos/trbet.jpg",
+    "url": "https://urlsites.link/t2s3i9u/",
+    "title": "Trbet",
+    "bonus": { "percent": "%100", "amount": "35.000 TL" },
+    "rating": 4.5
   }
 ]
